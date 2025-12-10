@@ -1,0 +1,70 @@
+import { useState } from 'react';
+import { Button } from '@/components/ui/button';
+import { RefreshCw, UtensilsCrossed } from 'lucide-react';
+import PageLayout from '@/components/PageLayout';
+import { useMeals } from '@/context/MealContext';
+
+const ValjMatratt = () => {
+  const { getRandomMeal } = useMeals();
+  const [selectedMeal, setSelectedMeal] = useState<string | null>(null);
+  const [isSpinning, setIsSpinning] = useState(false);
+
+  const handleSelectMeal = () => {
+    setIsSpinning(true);
+    
+    // Quick animation effect
+    let count = 0;
+    const interval = setInterval(() => {
+      setSelectedMeal(getRandomMeal());
+      count++;
+      if (count > 8) {
+        clearInterval(interval);
+        setSelectedMeal(getRandomMeal());
+        setIsSpinning(false);
+      }
+    }, 100);
+  };
+
+  return (
+    <PageLayout>
+      <div className="container py-12">
+        <div className="max-w-2xl mx-auto text-center">
+          <div className="mb-8">
+            <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
+              <UtensilsCrossed className="w-10 h-10 text-primary" />
+            </div>
+            <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Välj maträtt
+            </h1>
+            <p className="text-muted-foreground">
+              Tryck på knappen för att få ett slumpmässigt förslag på vad du kan äta idag.
+            </p>
+          </div>
+
+          {selectedMeal && (
+            <div className="mb-8 animate-scale-in">
+              <div className="bg-card border border-border rounded-xl p-8 shadow-card">
+                <p className="text-sm text-muted-foreground mb-2">Dagens förslag:</p>
+                <h2 className="text-2xl md:text-3xl font-bold text-foreground">
+                  {selectedMeal}
+                </h2>
+              </div>
+            </div>
+          )}
+
+          <Button 
+            size="lg" 
+            onClick={handleSelectMeal}
+            disabled={isSpinning}
+            className="gap-2 px-8"
+          >
+            <RefreshCw className={`w-5 h-5 ${isSpinning ? 'animate-spin' : ''}`} />
+            {selectedMeal ? 'Välj igen' : 'Välj maträtt'}
+          </Button>
+        </div>
+      </div>
+    </PageLayout>
+  );
+};
+
+export default ValjMatratt;
