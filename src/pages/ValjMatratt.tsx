@@ -43,9 +43,7 @@ const ValjMatratt = () => {
             <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
               Välj maträtt
             </h1>
-            <p className="text-muted-foreground">
-              Tryck på knappen för att få ett slumpmässigt förslag på vad du kan äta idag.
-            </p>
+            <p className="text-muted-foreground">Tryck på knappen för att få ett förslag på vad du kan äta.</p>
           </div>
 
           {selectedMeal && <div className="mb-8 animate-scale-in">
