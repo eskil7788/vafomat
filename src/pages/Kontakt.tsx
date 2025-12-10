@@ -5,28 +5,26 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
 import { useState } from 'react';
-
 const Kontakt = () => {
-  const { toast } = useToast();
+  const {
+    toast
+  } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate form submission
     setTimeout(() => {
       toast({
         title: 'Tack för ditt meddelande!',
-        description: 'Vi återkommer så snart vi kan.',
+        description: 'Vi återkommer så snart vi kan.'
       });
       setIsSubmitting(false);
       (e.target as HTMLFormElement).reset();
     }, 1000);
   };
-
-  return (
-    <PageLayout>
+  return <PageLayout>
       <div className="container py-12">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-12">
@@ -63,46 +61,9 @@ const Kontakt = () => {
             </div>
           </div>
 
-          <div className="bg-card border border-border rounded-xl p-8">
-            <h2 className="text-xl font-bold text-foreground mb-6">Skicka ett meddelande</h2>
-            
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <div className="grid md:grid-cols-2 gap-4">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
-                    Namn
-                  </label>
-                  <Input id="name" placeholder="Ditt namn" required />
-                </div>
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
-                    E-post
-                  </label>
-                  <Input id="email" type="email" placeholder="din@email.se" required />
-                </div>
-              </div>
-              
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
-                  Meddelande
-                </label>
-                <Textarea 
-                  id="message" 
-                  placeholder="Skriv ditt meddelande här..." 
-                  rows={5}
-                  required
-                />
-              </div>
-
-              <Button type="submit" className="w-full" disabled={isSubmitting}>
-                {isSubmitting ? 'Skickar...' : 'Skicka meddelande'}
-              </Button>
-            </form>
-          </div>
+          
         </div>
       </div>
-    </PageLayout>
-  );
+    </PageLayout>;
 };
-
 export default Kontakt;
