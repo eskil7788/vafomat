@@ -6,10 +6,10 @@ import Footer from '@/components/Footer';
 import FeatureCard from '@/components/FeatureCard';
 const Index = () => {
   const features = [{
-    title: 'Skapa veckoschema',
-    description: 'Få ett komplett veckoschema med sju olika maträtter, en för varje dag.',
+    title: 'Skapa veckomeny',
+    description: 'Få en komplett veckomeny med sju olika maträtter, en för varje dag.',
     icon: Calendar,
-    to: '/veckoschema'
+    to: '/veckomeny'
   }, {
     title: 'Se maträtter',
     description: 'Bläddra igenom hela listan av maträtter och hantera dina favoriter.',
@@ -60,23 +60,6 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {features.map((feature, index) => <FeatureCard key={feature.title} title={feature.title} description={feature.description} icon={feature.icon} to={feature.to} delay={index * 100} />)}
           </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-20">
-        <div className="container text-center">
-          <h2 className="text-3xl font-bold text-foreground mb-4">
-            Redo att börja?
-          </h2>
-          <p className="text-muted-foreground mb-8 max-w-lg mx-auto">
-            Med över 300 maträtter i vår databas kommer du aldrig att sakna inspiration.
-          </p>
-          <Link to="/valj-matratt">
-            <Button size="lg">
-              Få ditt förslag nu
-            </Button>
-          </Link>
         </div>
       </section>
 

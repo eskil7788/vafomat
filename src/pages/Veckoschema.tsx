@@ -36,10 +36,10 @@ const Veckoschema = () => {
               <Calendar className="w-10 h-10 text-primary" />
             </div>
             <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Veckoschema
+              Veckomeny
             </h1>
             <p className="text-muted-foreground">
-              Generera en veckas matsedel med sju unika maträtter.
+              Generera en veckomeny med sju slumpmässiga maträtter.
             </p>
           </div>
 
@@ -73,7 +73,7 @@ const Veckoschema = () => {
               className="gap-2 px-8"
             >
               <RefreshCw className={`w-5 h-5 ${isGenerating ? 'animate-spin' : ''}`} />
-              {weeklyMeals.length > 0 ? 'Generera nytt schema' : 'Skapa veckoschema'}
+              {weeklyMeals.length > 0 ? 'Generera ny meny' : 'Skapa veckomeny'}
             </Button>
           </div>
         </div>
