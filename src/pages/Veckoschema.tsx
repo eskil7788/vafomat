@@ -3,22 +3,13 @@ import { Button } from '@/components/ui/button';
 import { RefreshCw, Calendar } from 'lucide-react';
 import PageLayout from '@/components/PageLayout';
 import { useMeals } from '@/context/MealContext';
-
-const weekdays = [
-  'Måndag',
-  'Tisdag',
-  'Onsdag',
-  'Torsdag',
-  'Fredag',
-  'Lördag',
-  'Söndag',
-];
-
+const weekdays = ['Måndag', 'Tisdag', 'Onsdag', 'Torsdag', 'Fredag', 'Lördag', 'Söndag'];
 const Veckoschema = () => {
-  const { getWeeklyMenu } = useMeals();
+  const {
+    getWeeklyMenu
+  } = useMeals();
   const [weeklyMeals, setWeeklyMeals] = useState<string[]>([]);
   const [isGenerating, setIsGenerating] = useState(false);
-
   const handleGenerateMenu = () => {
     setIsGenerating(true);
     setTimeout(() => {
@@ -26,9 +17,7 @@ const Veckoschema = () => {
       setIsGenerating(false);
     }, 500);
   };
-
-  return (
-    <PageLayout>
+  return <PageLayout>
       <div className="container py-12">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-8">
@@ -43,14 +32,10 @@ const Veckoschema = () => {
             </p>
           </div>
 
-          {weeklyMeals.length > 0 && (
-            <div className="mb-8 space-y-3">
-              {weeklyMeals.map((meal, index) => (
-                <div 
-                  key={index}
-                  className="bg-card border border-border rounded-lg p-4 flex items-center gap-4 animate-slide-in"
-                  style={{ animationDelay: `${index * 50}ms` }}
-                >
+          {weeklyMeals.length > 0 && <div className="mb-8 space-y-3 px-0 mx-[100px]">
+              {weeklyMeals.map((meal, index) => <div key={index} className="bg-card border border-border rounded-lg p-4 flex items-center gap-4 animate-slide-in" style={{
+            animationDelay: `${index * 50}ms`
+          }}>
                   <div className="w-24 flex-shrink-0">
                     <span className="text-sm font-semibold text-primary">
                       {weekdays[index]}
@@ -60,26 +45,17 @@ const Veckoschema = () => {
                   <span className="text-foreground font-medium">
                     {meal}
                   </span>
-                </div>
-              ))}
-            </div>
-          )}
+                </div>)}
+            </div>}
 
           <div className="text-center">
-            <Button 
-              size="lg" 
-              onClick={handleGenerateMenu}
-              disabled={isGenerating}
-              className="gap-2 px-8"
-            >
+            <Button size="lg" onClick={handleGenerateMenu} disabled={isGenerating} className="gap-2 px-8">
               <RefreshCw className={`w-5 h-5 ${isGenerating ? 'animate-spin' : ''}`} />
               {weeklyMeals.length > 0 ? 'Generera ny meny' : 'Skapa veckomeny'}
             </Button>
           </div>
         </div>
       </div>
-    </PageLayout>
-  );
+    </PageLayout>;
 };
-
 export default Veckoschema;
