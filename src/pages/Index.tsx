@@ -33,7 +33,7 @@ const Index = () => {
       <section className="pt-32 pb-20 gradient-hero bg-secondary">
         <div className="container text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 animate-fade-in">
-            Vad vill du äta idag?
+            Hej, vad vill du äta idag?
           </h1>
           <p className="text-lg text-muted-foreground mb-10 max-w-xl mx-auto animate-fade-in" style={{
           animationDelay: '100ms'
