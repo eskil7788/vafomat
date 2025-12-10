@@ -30,14 +30,14 @@ const Index = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20 gradient-hero bg-white py-[160px]">
-        <div className="container text-center py-0">
+      <section className="pt-32 pb-20 gradient-hero bg-secondary">
+        <div className="container text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 animate-fade-in">
             Hej, vad vill du äta idag?
           </h1>
-          <p style={{
+          <p className="text-lg text-muted-foreground mb-10 max-w-xl mx-auto animate-fade-in" style={{
           animationDelay: '100ms'
-        }} className="text-lg text-muted-foreground max-w-xl mx-auto animate-fade-in py-0 my-0 mb-[50px]">
+        }}>
             Sluta fundera och låt oss hjälpa dig bestämma. 
             Med Vafomat får du snabbt ett förslag på vad du kan laga.
           </p>
@@ -52,7 +52,7 @@ const Index = () => {
       </section>
 
       {/* Features Section */}
-      <section className="bg-muted/30 py-[50px] my-0">
+      <section className="py-20 bg-muted/30">
         <div className="container">
           <h2 className="text-2xl font-bold text-foreground text-center mb-12">
             Utforska funktioner
