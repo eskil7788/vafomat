@@ -30,7 +30,7 @@ const Index = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20 gradient-hero bg-secondary">
+      <section className="pt-32 pb-20 gradient-hero bg-white py-[160px]">
         <div className="container text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 animate-fade-in">
             Hej, vad vill du äta idag?
