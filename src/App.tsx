@@ -27,7 +27,7 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/valj-matratt" element={<ValjMatratt />} />
-            <Route path="/veckoschema" element={<Veckoschema />} />
+            <Route path="/veckomeny" element={<Veckoschema />} />
             <Route path="/matratter" element={<Matratter />} />
             <Route path="/handlingslista" element={<Handlingslista />} />
             <Route path="/lagg-till" element={<LaggTill />} />
