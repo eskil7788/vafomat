@@ -325,27 +325,4 @@ export const initialMeals: string[] = [
   "Avokadotoast",
   "Shakshuka",
   "Crêpes",
-  
-  // Piroger och pajer
-  "Västerbottenpaj",
-  "Quiche Lorraine",
-  "Köttfärspaj",
-  "Laxpaj",
-  "Spenatpaj",
-  "Kantarellpaj",
-  "Piroger med kött",
-  "Empanadas",
-  "Cornish pasty",
-  
-  // Övriga rätter
-  "Risotto",
-  "Paella",
-  "Couscous med grönsaker",
-  "Polenta med svamp",
-  "Bruscetta",
-  "Antipasti",
-  "Tapas",
-  "Mezze",
-  "Fondue",
-  "Raclette"
 ];
