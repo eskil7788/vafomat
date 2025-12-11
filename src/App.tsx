@@ -14,7 +14,7 @@ import Information from "./pages/Information";
 import OmOss from "./pages/OmOss";
 import Kontakt from "./pages/Kontakt";
 import NotFound from "./pages/NotFound";
-import ScrollToTop from "./components/Scrolltotop";
+import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
