@@ -18,7 +18,7 @@ const Veckoschema = () => {
     }, 500);
   };
   return <PageLayout>
-      <div className="container mx-0 py-0">
+      <div className="container mx-0 py-0 my-[25px]">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-8">
             
