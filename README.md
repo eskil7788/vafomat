@@ -27,7 +27,7 @@ No external backend or database is required
 
 Users can build and maintain a personal meal library over time
 
-###### **Important Note:**
+#### **Important Note:**
 
 All data is stored locally in the browser. If you clear your browser data (including Local Storage), switch to another browser, or use a different device, your saved meals, lists, and settings will not carry over. Each browser and device maintains its own independent data store.
 
@@ -65,7 +65,7 @@ Footer Navigation — Information, Om oss, Contact, etc.
 
 You may run the project locally by cloning the repository and using your preferred IDE or editor.
 
-###### Prerequisite:
+#### Prerequisite:
 
  Node.js and npm must be installed. For convenience, you may install them using nvm:
  https://github.com/nvm-sh/nvm#installing-and-updating
