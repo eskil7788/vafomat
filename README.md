@@ -71,21 +71,21 @@ You may run the project locally by cloning the repository and using your preferr
  https://github.com/nvm-sh/nvm#installing-and-updating
 
  
-```# **Installation**
+# **Installation**
 
 ### Step 1: Clone the repository.
-git clone <GIT_URL>
+```git clone <GIT_URL>```
 
 ### Step 2: Navigate to the project directory.
-cd <PROJECT_NAME>
+```cd <PROJECT_NAME>```
 
 ### Step 3: Install dependencies.
-npm install
+```npm install```
 
 ### Step 4: Start the development server.
-npm run dev
+```npm run dev```
 Then open the application in your browser at the URL displayed in the terminal (typically http://localhost:5173).
-```
+
 
 ### **Project Structure**
 
