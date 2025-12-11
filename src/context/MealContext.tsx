@@ -49,16 +49,13 @@ export const MealProvider: React.FC<MealProviderProps> = ({ children }) => {
     return meals[randomIndex];
   };
 
-  const getWeeklyMenu = (): string[] => {
+    const getWeeklyMenu = (): string[] => {
     if (meals.length === 0) return [];
-    
-    // Select 7 independently random meals (can repeat if needed)
-    const weeklyMeals: string[] = [];
-    for (let i = 0; i < 7; i++) {
-      const randomIndex = Math.floor(Math.random() * meals.length);
-      weeklyMeals.push(meals[randomIndex]);
-    }
-    return weeklyMeals;
+
+    // Blanda listan och ta de första 7
+    const shuffled = [...meals].sort(() => Math.random() - 0.5);
+
+    return shuffled.slice(0, 7); 
   };
 
   return (
