@@ -71,7 +71,7 @@ You may run the project locally by cloning the repository and using your preferr
  https://github.com/nvm-sh/nvm#installing-and-updating
 
  
-´´´# **Installation**
+```# **Installation**
 
 ### Step 1: Clone the repository.
 git clone <GIT_URL>
@@ -84,8 +84,8 @@ npm install
 
 ### Step 4: Start the development server.
 npm run dev
-Then open the application in your browser at the URL displayed in the terminal (typically http://localhost:5173).´´´
-
+Then open the application in your browser at the URL displayed in the terminal (typically http://localhost:5173).
+```
 
 ### **Project Structure**
 
