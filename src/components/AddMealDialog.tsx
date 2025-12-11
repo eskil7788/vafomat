@@ -18,12 +18,22 @@ interface AddMealDialogProps {
 
 const AddMealDialog = ({ trigger }: AddMealDialogProps) => {
   const [mealName, setMealName] = useState('');
+  const [error, setError] = useState('');
   const [open, setOpen] = useState(false);
   const { addMeal, meals } = useMeals();
   const { toast } = useToast();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+
+     if (error) {
+      toast({
+        title: "För långt",
+        description: error,
+        variant: "destructive",
+      });
+      return;
+    }
     
     if (!mealName.trim()) {
       toast({
@@ -71,9 +81,24 @@ const AddMealDialog = ({ trigger }: AddMealDialogProps) => {
             type="text"
             placeholder="Skriv maträttens namn..."
             value={mealName}
-            onChange={(e) => setMealName(e.target.value)}
+            onChange={(e) => {
+              const value = e.target.value;
+              setMealName(value);
+
+              if (value.trim().length > 50) {
+                setError("Maträtten får max vara 50 tecken."); 
+              } else {
+                setError("");
+              }
+            }}
+            className={error ? "border-red-500" : ""}
             autoFocus
           />
+
+          {error && (
+            <p className="text-red-500 text-sm">{error}</p> 
+          )}
+
           <div className="flex justify-end gap-3">
             <Button type="button" variant="outline" onClick={() => setOpen(false)}>
               Avbryt
