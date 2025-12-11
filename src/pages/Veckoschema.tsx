@@ -30,7 +30,7 @@ const Veckoschema = () => {
             </p>
           </div>
 
-          {weeklyMeals.length > 0 && <div className="mb-8 space-y-3 mx-0 px-[100px]">
+          {weeklyMeals.length > 0 && <div className="mb-8 space-y-3 mx-0 px-0">
               {weeklyMeals.map((meal, index) => <div key={index} className="bg-card border border-border rounded-lg p-4 flex items-center gap-4 animate-slide-in" style={{
             animationDelay: `${index * 50}ms`
           }}>
