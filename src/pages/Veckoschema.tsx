@@ -18,7 +18,7 @@ const Veckoschema = () => {
     }, 500);
   };
   return <PageLayout>
-      <div className="container py-12">
+      <div className="container py-12 mx-0">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-8">
             
@@ -39,7 +39,7 @@ const Veckoschema = () => {
                       {weekdays[index]}
                     </span>
                   </div>
-                  <div className="h-px flex-1 bg-border" />
+                  <div className="h-px flex-1 bg-secondary" />
                   <span className="text-foreground font-medium">
                     {meal}
                   </span>
