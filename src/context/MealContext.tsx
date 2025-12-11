@@ -50,14 +50,24 @@ export const MealProvider: React.FC<MealProviderProps> = ({ children }) => {
   };
 
     const getWeeklyMenu = (): string[] => {
-    if (meals.length === 0) return [];
+  if (meals.length === 0) return [];
 
-    // Blanda listan och ta de första 7
-    const shuffled = [...meals].sort(() => Math.random() - 0.5);
+  const weeklyMeals: string[] = [];
 
-    return shuffled.slice(0, 7); 
-  };
+  for (let i = 0; i < 7; i++) {
+    let randomMeal;
 
+    // loopa tills vi hittar en rätt som inte redan finns i weeklyMeals
+    do {
+      const randomIndex = Math.floor(Math.random() * meals.length);
+      randomMeal = meals[randomIndex];
+    } while (weeklyMeals.includes(randomMeal));
+
+    weeklyMeals.push(randomMeal);
+  }
+
+  return weeklyMeals;
+};
   return (
     <MealContext.Provider value={{ meals, addMeal, removeMeal, getRandomMeal, getWeeklyMenu }}>
       {children}
