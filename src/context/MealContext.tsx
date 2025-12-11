@@ -34,10 +34,21 @@ export const MealProvider: React.FC<MealProviderProps> = ({ children }) => {
   }, [meals]);
 
   const addMeal = (meal: string) => {
-    if (meal.trim() && !meals.includes(meal.trim())) {
-      setMeals(prev => [...prev, meal.trim()]);
-    }
-  };
+  const trimmed = meal.trim();
+
+  if (!trimmed) return;
+
+  // Stoppa om längre än 50 tecken
+  if (trimmed.length > 50) {
+    console.warn("Maträtten är för lång (max 50 tecken).");
+    return;
+  }
+
+  if (meals.includes(trimmed)) return;
+
+  setMeals(prev => [...prev, trimmed]);
+};
+
 
   const removeMeal = (index: number) => {
     setMeals(prev => prev.filter((_, i) => i !== index));
