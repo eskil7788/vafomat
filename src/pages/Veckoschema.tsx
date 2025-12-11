@@ -21,9 +21,7 @@ const Veckoschema = () => {
       <div className="container py-12">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-8">
-            <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
-              <Calendar className="w-10 h-10 text-primary" />
-            </div>
+            
             <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
               Veckomeny
             </h1>
@@ -48,7 +46,7 @@ const Veckoschema = () => {
                 </div>)}
             </div>}
 
-          <div className="text-center">
+          <div className="text-center mt-[20px]">
             <Button size="lg" onClick={handleGenerateMenu} disabled={isGenerating} className="gap-2 px-8">
               <RefreshCw className={`w-5 h-5 ${isGenerating ? 'animate-spin' : ''}`} />
               {weeklyMeals.length > 0 ? 'Generera ny meny' : 'Skapa veckomeny'}
