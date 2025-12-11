@@ -11,8 +11,7 @@ const LaggTill = () => {
             <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
               Lägg till maträtt
             </h1>
-            <p className="text-muted-foreground mb-8">Lägg till en ny maträtt i listan så att den 
-kan föreslås i framtiden.</p>
+            <p className="text-muted-foreground mb-8">Lägg till en ny maträtt i listan så att den kan föreslås i framtiden.</p>
           </div>
 
           <AddMealDialog trigger={<Button size="lg" className="gap-2 px-8">
