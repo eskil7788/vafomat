@@ -14,6 +14,7 @@ import Information from "./pages/Information";
 import OmOss from "./pages/OmOss";
 import Kontakt from "./pages/Kontakt";
 import NotFound from "./pages/NotFound";
+import ScrollToTop from "./components/Scrolltotop";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +25,7 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter>
+          <ScrollToTop />
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/valj-matratt" element={<ValjMatratt />} />
