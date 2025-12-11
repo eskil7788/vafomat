@@ -34,10 +34,7 @@ const OmOss = () => {
                     <Heart className="w-6 h-6 text-primary" />
                   </div>
                   <h3 className="font-bold text-foreground mb-3">Till min familj</h3>
-                  <p className="text-muted-foreground text-sm">
-                    Jag skapade Vafomat till min familj, som alltid ställer frågan om vad vi ska äta.
-                    Jag hoppas att detta verktyg kommer att underlätta er vardag.
-                  </p>
+                  <p className="text-muted-foreground text-sm">Vafomat är skapad för min familj, som alltid undrar vad vi ska äta. Förhoppningsvis slipper vi den frågan lite oftare nu.</p>
                 </div>
 
                 <div className="bg-card border border-border rounded-xl p-6">
