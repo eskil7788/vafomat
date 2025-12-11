@@ -18,7 +18,7 @@ const Veckoschema = () => {
     }, 500);
   };
   return <PageLayout>
-      <div className="container mx-0 py-0">
+      <div className="container py-12 mx-0">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-8">
             
@@ -30,7 +30,7 @@ const Veckoschema = () => {
             </p>
           </div>
 
-          {weeklyMeals.length > 0 && <div className="mb-8 space-y-3 mx-0 px-0">
+          {weeklyMeals.length > 0 && <div className="mb-8 space-y-3 px-0 mx-0">
               {weeklyMeals.map((meal, index) => <div key={index} className="bg-card border border-border rounded-lg p-4 flex items-center gap-4 animate-slide-in" style={{
             animationDelay: `${index * 50}ms`
           }}>
@@ -39,7 +39,7 @@ const Veckoschema = () => {
                       {weekdays[index]}
                     </span>
                   </div>
-                  
+                  <div className="h-px flex-1 bg-transparent" />
                   <span className="text-foreground font-medium">
                     {meal}
                   </span>
