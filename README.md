@@ -1,73 +1,64 @@
-# Welcome to your Lovable project
+**Vafomat**
+A lightweight meal-planning application built with modern frontend technologies to help users quickly choose meals, build weekly menus, and manage shopping and meal lists.
 
-## Project info
+**Tech Stack**
+Vite
+TypeScript
+React
+shadcn-ui
+Tailwind CSS
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+**Data Persistence**
+User-generated data is stored locally in the browser using structured Local Storage keys. This strategy ensures:
+State is restored across page reloads, no external backend or database is required, users can build and maintain a personal meal library over time
 
-## How can I edit this code?
+**Important Note:**
+All data is stored locally in the browser. If you clear your browser data (including Local Storage), switch to another browser, or use a different device, your saved meals, lists, and settings will not carry over. Each browser and device maintains its own independent data store.
 
-There are several ways of editing your application.
+**Pages and Navigation Structure**
+Landing Page — App title, primary CTA, and top-level navigation
+Random Meal Page (/valj-matratt) — Auto-generated meal suggestions
+Veckomeny — Seven-day randomized weekly menu
+Se maträtter — View, add, and delete meals
+Handlingslista — Receipt-style shopping list
+Lägg till maträtt — Popup module for adding new meals
+Information — Application description and usage guidelines
+Om oss — Background and service mission
+Footer Navigation — Information, Om oss, Contact, etc.
 
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
+**Getting Started**
+You may run the project locally by cloning the repository and using your preferred IDE or editor.
+Prerequisite:
+ Node.js and npm must be installed. For convenience, you may install them using nvm:
+ https://github.com/nvm-sh/nvm#installing-and-updating
+Installation
+# Step 1: Clone the repository.
 git clone <YOUR_GIT_URL>
 
 # Step 2: Navigate to the project directory.
 cd <YOUR_PROJECT_NAME>
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Step 3: Install dependencies.
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Step 4: Start the development server.
 npm run dev
-```
+Then open the application in your browser at the URL displayed in the terminal (typically http://localhost:5173).
 
-**Edit a file directly in GitHub**
+**Project Structure**
+The project adheres to a standard Vite + React + TypeScript structure:
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+components/ — Modular UI components built using shadcn-ui and Tailwind CSS
+pages/ — Routed screens such as random meal selection, weekly menus, and meal library views
+hooks/ — Custom logic including Local Storage handlers
+data/ — Static or initial data sources (e.g., seed meal lists)
+utils/ — Utility logic such as randomization and formatting helpers
 
-**Use GitHub Codespaces**
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+**Contributing**
+Contributions are welcome. Please open an issue or submit a pull request to propose new features, fix bugs, or improve the codebase.
 
-## What technologies are used for this project?
+**License**
+The project may be licensed according to the repository owner’s preferred licensing model. Add a formal license file (e.g., LICENSE) if required.
 
-This project is built with:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
