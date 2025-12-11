@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import logo from "@/assets/vafomat-logotyp.png";
 
 const Header = () => {
   return (
@@ -21,6 +22,11 @@ const Header = () => {
           >
             Om oss
           </Link>
+          <img 
+              src={logo} 
+              alt="Vafomat logotyp" 
+              className="h-12 w-auto opacity-90"
+            />
         </nav>
       </div>
     </header>

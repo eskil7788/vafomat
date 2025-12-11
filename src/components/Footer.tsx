@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom';
+import logo from "@/assets/vafomat-logotyp.png";
+
 
 const Footer = () => {
   return (
@@ -6,9 +8,13 @@ const Footer = () => {
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="font-bold text-lg text-foreground mb-4">Vafomat</h3>
+            <img 
+              src={logo} 
+              alt="Vafomat logotyp" 
+              className="h-20 w-auto mb-4 opacity-90"
+            />
             <p className="text-muted-foreground text-sm">
-              Din hjälp för att enkelt bestämma vad du ska äta idag.
+              Din hjälp för att enkelt bestämma vad du ska äta.
             </p>
           </div>
           
