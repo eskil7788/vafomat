@@ -39,7 +39,7 @@ const Veckoschema = () => {
                       {weekdays[index]}
                     </span>
                   </div>
-                  <div className="h-px flex-1 bg-transparent" />
+                  
                   <span className="text-foreground font-medium">
                     {meal}
                   </span>
