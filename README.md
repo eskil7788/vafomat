@@ -1,4 +1,4 @@
-**Vafomat**
+# **Vafomat**
 
 A lightweight meal-planning application built with modern frontend technologies to help users quickly choose meals, build weekly menus, and manage shopping and meal lists.
 Tech Stack
@@ -17,7 +17,7 @@ shadcn-ui
 Tailwind CSS
 
 
-**Data Persistence**
+### **Data Persistence**
 
 User-generated data is stored locally in the browser using structured Local Storage keys. This strategy ensures:
 
@@ -27,12 +27,12 @@ No external backend or database is required
 
 Users can build and maintain a personal meal library over time
 
-**Important Note:**
+###### **Important Note:**
 
 All data is stored locally in the browser. If you clear your browser data (including Local Storage), switch to another browser, or use a different device, your saved meals, lists, and settings will not carry over. Each browser and device maintains its own independent data store.
 
 
-**Pages and Navigation Structure**
+### **Pages and Navigation Structure**
 
 Landing Page — App title, primary CTA, and top-level navigation
 
@@ -61,33 +61,33 @@ Om oss — Background and service mission
 Footer Navigation — Information, Om oss, Contact, etc.
 
 
-**Getting Started**
+### *Getting Started**
 
 You may run the project locally by cloning the repository and using your preferred IDE or editor.
 
-Prerequisite:
+###### Prerequisite:
 
  Node.js and npm must be installed. For convenience, you may install them using nvm:
  https://github.com/nvm-sh/nvm#installing-and-updating
 
  
-**Installation**
+# **Installation**
 
-# Step 1: Clone the repository.
+### Step 1: Clone the repository.
 git clone <GIT_URL>
 
-# Step 2: Navigate to the project directory.
+### Step 2: Navigate to the project directory.
 cd <PROJECT_NAME>
 
-# Step 3: Install dependencies.
+### Step 3: Install dependencies.
 npm install
 
-# Step 4: Start the development server.
+### Step 4: Start the development server.
 npm run dev
 Then open the application in your browser at the URL displayed in the terminal (typically http://localhost:5173).
 
 
-**Project Structure**
+### **Project Structure**
 
 The project adheres to a standard Vite + React + TypeScript structure:
 
@@ -106,13 +106,13 @@ data/ — Static or initial data sources (e.g., seed meal lists)
 utils/ — Utility logic such as randomization and formatting helpers
 
 
-**Contributing**
+### **Contributing**
 
 
 Contributions are welcome. Please open an issue or submit a pull request to propose new features, fix bugs, or improve the codebase.
 
 
-License
+### **License**
 
 
 The project may be licensed according to the repository owner’s preferred licensing model. Add a formal license file (e.g., LICENSE) if required.
