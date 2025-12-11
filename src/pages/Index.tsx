@@ -12,7 +12,7 @@ const Index = () => {
     to: '/veckomeny'
   }, {
     title: 'Se maträtter',
-    description: 'Bläddra igenom hela listan av maträtter och hantera dina favoriter.',
+    description: 'Bläddra igenom och hantera hela listan av maträtter.',
     icon: UtensilsCrossed,
     to: '/matratter'
   }, {
