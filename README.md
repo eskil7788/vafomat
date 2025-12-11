@@ -2,19 +2,19 @@
 
 A lightweight meal-planning application built with modern frontend technologies to help users quickly choose meals, build weekly menus, and manage shopping and meal lists.
 Tech Stack
-Vite
+- Vite
 
 
-TypeScript
+- TypeScript
 
 
-React
+- React
 
 
-shadcn-ui
+- shadcn-ui
 
 
-Tailwind CSS
+- Tailwind CSS
 
 
 ### **Data Persistence**
@@ -27,7 +27,7 @@ No external backend or database is required
 
 Users can build and maintain a personal meal library over time
 
-#### **Important Note:**
+#### Important Note:
 
 All data is stored locally in the browser. If you clear your browser data (including Local Storage), switch to another browser, or use a different device, your saved meals, lists, and settings will not carry over. Each browser and device maintains its own independent data store.
 
@@ -61,7 +61,7 @@ Om oss — Background and service mission
 Footer Navigation — Information, Om oss, Contact, etc.
 
 
-### *Getting Started**
+### **Getting Started**
 
 You may run the project locally by cloning the repository and using your preferred IDE or editor.
 
