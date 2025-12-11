@@ -22,14 +22,8 @@ const Information = () => {
             <section className="mb-12">
               <h2 className="text-2xl font-bold text-foreground mb-4">Vad är Vafomat?</h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Vafomat är en enkel och användarvänlig tjänst som hjälper dig att bestämma vad du ska äta. 
-                Vi vet alla hur det är – du står i köket efter en lång dag och kan bara inte komma på vad 
-                du ska laga. Det är där Vafomat kommer in i bilden.
-              </p>
-              <p className="text-muted-foreground leading-relaxed">
-                Med en databas på över 300 maträtter från olika kök världen över får du alltid nya 
-                och spännande förslag. Oavsett om du vill ha något snabbt och enkelt eller lite mer 
-                avancerat, har vi något för dig.
+                Vafomat är ett verktyg som gör det lättare att välja vad du ska laga för mat. 
+                Kom ihåg alla maträtter du gillar och få förslag som utgår från dina egna favoriter.  
               </p>
             </section>
 
@@ -44,7 +38,7 @@ const Information = () => {
                   <div>
                     <h3 className="font-semibold text-foreground mb-2">Slumpmässigt val</h3>
                     <p className="text-muted-foreground text-sm">
-                      Tryck på "Välj maträtt" och få ett slumpmässigt förslag från vår databas. 
+                      Tryck på "Välj maträtt" och få ett slumpmässigt förslag från listan med maträtter. 
                       Gillar du inte förslaget? Tryck igen för ett nytt!
                     </p>
                   </div>
@@ -57,8 +51,8 @@ const Information = () => {
                   <div>
                     <h3 className="font-semibold text-foreground mb-2">Veckoplanering</h3>
                     <p className="text-muted-foreground text-sm">
-                      Skapa ett komplett veckoschema med sju olika maträtter. Perfekt för att 
-                      planera veckans middagar i förväg och undvika den dagliga frågan.
+                      Skapa en komplett veckomeny med sju olika maträtter. 
+                      Perfekt för att planera veckans middagar i förväg.
                     </p>
                   </div>
                 </div>
@@ -70,8 +64,7 @@ const Information = () => {
                   <div>
                     <h3 className="font-semibold text-foreground mb-2">Handlingslista</h3>
                     <p className="text-muted-foreground text-sm">
-                      Skriv din inköpslista direkt i appen. Med ett kvitto-liknande utseende 
-                      blir det enkelt att hålla koll på vad du behöver handla.
+                      Skriv din inköpslista direkt i appen för att inte glömma något när du handlar.
                     </p>
                   </div>
                 </div>
@@ -83,8 +76,7 @@ const Information = () => {
                   <div>
                     <h3 className="font-semibold text-foreground mb-2">Anpassa efter dig</h3>
                     <p className="text-muted-foreground text-sm">
-                      Lägg till egna maträtter som du gillar eller ta bort de du inte vill se. 
-                      Gör Vafomat till din egen personliga matassistent.
+                      Lägg till maträtter som du gillar eller ta bort de du inte vill ha. 
                     </p>
                   </div>
                 </div>
@@ -96,8 +88,8 @@ const Information = () => {
                 Varför Vafomat?
               </h2>
               <p className="text-muted-foreground">
-                För att vardagens små beslut inte behöver vara svåra. Med Vafomat sparar du tid, 
-                får inspiration och slipper den eviga frågan: "Vad ska vi äta idag?"
+                För att vardagens små beslut inte behöver vara svåra. Med Vafomat får du ordning på dina maträtter, sparar tid, 
+                och slipper den eviga frågan: "Vad ska vi äta idag?"
               </p>
             </section>
           </div>

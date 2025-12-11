@@ -20,38 +20,41 @@ const OmOss = () => {
 
           <div className="prose prose-lg max-w-none">
             <section className="mb-12">
-              <p className="text-muted-foreground leading-relaxed text-lg">
-                Vafomat skapades med en enkel tanke: att göra vardagen lite enklare. Vi har alla 
-                varit där – stående i köket efter en lång dag, stirrande in i kylskåpet, utan 
-                den minsta aning om vad vi ska laga till middag. Det var frustrerande, och vi 
-                visste att vi inte var ensamma.
+              <p className="text-muted-foreground leading-relaxed text-lg mb-4">
+                Varje dag tänker människor tanken “Vad ska vi äta idag?” och efter alldeles för lång tid 
+                landar de ofta i samma maträtt som alltid. Samtidigt händer det att man lagar något nytt 
+                och riktigt gott — som man sedan glömmer bort att göra igen. 
+              </p>
+              <p className="text-muted-foreground leading-relaxed text-lg mb-4">
+                Jag skapade Vafomat för att få ett enkelt sätt att samla alla mina maträtter 
+                och få förslag utan att behöva lägga tid på att fundera.
               </p>
             </section>
 
             <section className="mb-12">
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="bg-card border border-border rounded-xl p-6">
-                  <div className="w-12 h-12 rounded-full bg-secondary/30 flex items-center justify-center mb-4">
-                    <Target className="w-6 h-6 text-secondary-foreground" />
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                    <Heart className="w-6 h-6 text-primary" />
                   </div>
-                  <h3 className="font-bold text-foreground mb-3">Vårt uppdrag</h3>
+                  <h3 className="font-bold text-foreground mb-3">Till min familj</h3>
                   <p className="text-muted-foreground text-sm">
-                    Att eliminera beslutsångesten kring mat och ge människor mer tid att 
-                    fokusera på det som verkligen betyder något – att njuta av maten med 
-                    nära och kära.
+                    Jag skapade Vafomat till min familj, som alltid ställer frågan om vad vi ska äta.
+                    Jag hoppas att detta verktyg kommer att underlätta er vardag.
                   </p>
                 </div>
 
                 <div className="bg-card border border-border rounded-xl p-6">
                   <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                    <Heart className="w-6 h-6 text-primary" />
+                    <Target className="w-6 h-6 text-primary" />
                   </div>
-                  <h3 className="font-bold text-foreground mb-3">Vår vision</h3>
+                  <h3 className="font-bold text-foreground mb-3">Framåt</h3>
                   <p className="text-muted-foreground text-sm">
-                    En värld där ingen behöver fundera i mer än några sekunder över vad 
-                    de ska äta. Mat ska vara glädje, inte stress.
+                    Jag vill fortsätta utveckla Vafomat till ett ännu smidigare verktyg för vardagen. 
+                    Med fler funktioner kan vardagens beslut bli ännu enklare. 
                   </p>
                 </div>
+                
               </div>
             </section>
 

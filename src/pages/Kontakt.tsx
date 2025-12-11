@@ -46,7 +46,7 @@ const Kontakt = () => {
               </div>
               <h3 className="font-semibold text-foreground mb-2">E-post</h3>
               <p className="text-muted-foreground text-sm">
-                hej@vafomat.se
+                info@vafomat.se
               </p>
             </div>
 

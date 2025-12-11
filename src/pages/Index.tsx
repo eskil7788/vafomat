@@ -6,23 +6,23 @@ import Footer from '@/components/Footer';
 import FeatureCard from '@/components/FeatureCard';
 const Index = () => {
   const features = [{
-    title: 'Skapa veckomeny',
-    description: 'Få en komplett veckomeny med sju olika maträtter, en för varje dag.',
+    title: 'Veckomeny',
+    description: 'Få en veckomeny med sju olika maträtter, en för varje dag.',
     icon: Calendar,
     to: '/veckomeny'
   }, {
-    title: 'Se maträtter',
+    title: 'Maträtter',
     description: 'Bläddra igenom och hantera hela listan av maträtter.',
     icon: UtensilsCrossed,
     to: '/matratter'
   }, {
-    title: 'Skriv handlingslista',
-    description: 'Skapa din inköpslista i ett enkelt kvittoformat.',
+    title: 'Handlingslista',
+    description: 'Skriv din handlingslista direkt i programmet.',
     icon: ListTodo,
     to: '/handlingslista'
   }, {
     title: 'Lägg till maträtt',
-    description: 'Lägg till egna maträtter till databasen för framtida förslag.',
+    description: 'Lägg till egna maträtter för framtida förslag.',
     icon: Plus,
     to: '/lagg-till'
   }];
@@ -39,7 +39,7 @@ const Index = () => {
           animationDelay: '100ms'
         }}>
             Sluta fundera och låt oss hjälpa dig bestämma. 
-            Med Vafomat får du snabbt ett förslag på vad du kan laga.
+            Med Vafomat får du snabbt förslag på mat du kan laga.
           </p>
           <Link to="/valj-matratt">
             <Button size="lg" className="text-lg px-8 py-6 animate-fade-in shadow-lg hover:shadow-xl transition-shadow" style={{
