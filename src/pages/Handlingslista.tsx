@@ -30,12 +30,8 @@ const Handlingslista = () => {
         <div className="max-w-md mx-auto">
           <div className="text-center mb-8">
             
-            <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Handlingslista
-            </h1>
-            <p className="text-muted-foreground">
-              Skriv din inköpslista här
-            </p>
+            <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Skriv din inköpslista här</h1>
+            
           </div>
 
           {/* Receipt-style list */}
