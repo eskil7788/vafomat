@@ -1,9 +1,7 @@
 import PageLayout from '@/components/PageLayout';
 import { Heart, Target, Users } from 'lucide-react';
-
 const OmOss = () => {
-  return (
-    <PageLayout>
+  return <PageLayout>
       <div className="container py-12">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
@@ -13,9 +11,7 @@ const OmOss = () => {
             <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
               Om oss
             </h1>
-            <p className="text-muted-foreground text-lg">
-              Människorna bakom Vafomat
-            </p>
+            
           </div>
 
           <div className="prose prose-lg max-w-none">
@@ -58,25 +54,7 @@ const OmOss = () => {
               </div>
             </section>
 
-            <section className="mb-12">
-              <h2 className="text-2xl font-bold text-foreground mb-4">Vår historia</h2>
-              <p className="text-muted-foreground leading-relaxed mb-4">
-                Allt började med en enkel fråga som ställdes alldeles för många gånger: 
-                "Vad ska vi äta idag?" Efter att ha frågat det tusentals gånger utan bra svar, 
-                bestämde vi oss för att göra något åt saken.
-              </p>
-              <p className="text-muted-foreground leading-relaxed mb-4">
-                Vi samlade ihop hundratals maträtter – allt från klassiska svenska husmanskost 
-                till exotiska rätter från fjärran länder. Målet var att skapa en tjänst som 
-                var så enkel att vem som helst kunde använda den, och så smart att den alltid 
-                gav bra förslag.
-              </p>
-              <p className="text-muted-foreground leading-relaxed">
-                Idag är Vafomat ett verktyg som hjälper familjer, singlar och alla däremellan 
-                att snabbt och enkelt bestämma vad som ska hamna på tallriken. Och vi är 
-                bara i början av vår resa.
-              </p>
-            </section>
+            
 
             <section className="bg-gradient-to-r from-primary/5 to-secondary/5 border border-primary/20 rounded-xl p-8">
               <h2 className="text-xl font-bold text-foreground mb-3 text-center">
@@ -90,8 +68,6 @@ const OmOss = () => {
           </div>
         </div>
       </div>
-    </PageLayout>
-  );
+    </PageLayout>;
 };
-
 export default OmOss;

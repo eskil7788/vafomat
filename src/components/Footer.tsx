@@ -1,21 +1,12 @@
 import { Link } from 'react-router-dom';
 import logo from "@/assets/vafomat-logotyp.png";
-
-
 const Footer = () => {
-  return (
-    <footer className="bg-card border-t border-border py-12">
+  return <footer className="bg-card border-t border-border py-12">
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <img 
-              src={logo} 
-              alt="Vafomat logotyp" 
-              className="h-20 w-auto mb-4 opacity-90"
-            />
-            <p className="text-muted-foreground text-sm">
-              Din hjälp för att enkelt bestämma vad du ska äta.
-            </p>
+            <img src={logo} alt="Vafomat logotyp" className="h-20 w-auto mb-4 opacity-90" />
+            <p className="text-muted-foreground text-sm">Snabbare matval, varje dag.</p>
           </div>
           
           <div>
@@ -83,8 +74,6 @@ const Footer = () => {
           </p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
