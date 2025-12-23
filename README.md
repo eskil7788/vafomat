@@ -1,7 +1,10 @@
 # **Vafomat**
 
 A lightweight meal-planning application built with modern frontend technologies to help users quickly choose meals, build weekly menus, and manage shopping and meal lists.
-Tech Stack
+
+This app is available trough the following URL: https://vafomat.vercel.app/
+
+**Tech Stack**
 - Vite
 
 
